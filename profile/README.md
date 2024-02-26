@@ -29,3 +29,6 @@ Our goal is to develop both an app and a website for GrinSync. Some of our prior
 
 # Layout of the repository #
 The repository is divided into two main sections: front-end and back-end.
+
+# Issue-tracking tool#
+We use [Trello](https://trello.com/b/uRb8HI8c/grinsync) to track our issues. Currently, we have the main pages of our mobile app that needs to be implemented as high-level issues. In subsequent sprints, we will break them down into sub-issues and allocate them to different members of the group. 
