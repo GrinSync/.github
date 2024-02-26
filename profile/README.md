@@ -1,5 +1,5 @@
 # What #
-GrinSync is an app for scheduling, finding, and tracking events happening in Grinnell. 
+GrinSync is an app for scheduling, finding, and tracking events happening in Grinnell. It contains: a home page that showcases events happening soon, a calendar view, a search page, an event creation/editing page, and a user profile. There are three kinds of users: community members, Grinnell staff/faculty, and Grinnell College students. 
 
 # Ideas #
 Our idea is to create a platform that makes it easy for Grinnell students and community members to get accurate information about Grinnell events. We want student organizations to communicate with Grinnellians about their events, community members to more easily engage with the college, and students to plan what events they will attend based on their needs, interests, and schedule.
