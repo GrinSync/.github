@@ -4,7 +4,7 @@ GrinSync is an app for scheduling, finding, and tracking events happening in Gri
 # Ideas #
 
 # Goals #
-## Major features we aim to include ##
+## Major features ##
 
 - A comprehensive event calendar with all (or close to all) events going on at Grinnell College.
 - The ability for users (those that are allowed to) to add and edit events in the event calendar.
@@ -17,7 +17,7 @@ GrinSync is an app for scheduling, finding, and tracking events happening in Gri
 - Account creation for GrinSync users.
 - Student organization leaders can link their account with the student org once they verify their identity. Verification must occur every semester. 
 
-## Our stretch goals ##
+## Stretch goals ##
 
 # Layout of the repository #
 
