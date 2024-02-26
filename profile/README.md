@@ -4,7 +4,7 @@ GrinSync is an app for scheduling, finding, and tracking events happening in Gri
 # Ideas #
 
 # Goals #
-## Major features we aim to include##
+## Major features we aim to include ##
 
 ## Our stretch goals ##
 
