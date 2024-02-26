@@ -19,5 +19,10 @@ GrinSync is an app for scheduling, finding, and tracking events happening in Gri
 
 ## Stretch goals ##
 
+- Allowing users to select specific events/organizations to get notifications from.
+- The option to edit an event after you post it and notify interested users about the changes in event details.
+- Adding events to the Student User’s Outlook calendar. 
+
+
 # Layout of the repository #
 
