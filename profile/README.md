@@ -28,4 +28,4 @@ Our goal is to develop both an app and a website for GrinSync. Some of our prior
 
 
 # Layout of the repository #
-
+The repository is divided into two main sections: front-end and back-end.
