@@ -23,6 +23,8 @@ Welcome to GrinSync! Grinsync is a mobile app that...
   - #### Event Reminder
 - ### Frequently Asked Questions
 
+---
+
 ## Creating an account
 You may access GrinSync as one of the following four roles: Grinnell College Student, Grinnell College Staff/Faculty/Administrator, Grinnell Community User, and Guest User. 
 ### Role Descriptioin and event visibility
