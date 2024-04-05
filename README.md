@@ -7,5 +7,6 @@ This is a general repository for general information on GrinSync (as the whole p
 - *profile*: The folder for our organization's profile. Currently, it only contains the README.md file that appears on our organization's home page. 
 - *Documentation*: The folder for the documentation of our software. It contains User Guide.md, Developer Guide.md, Help Menus and Tooltips.md, Changes and Release Notes.md.
 
-## Operational Use Cases (so far)
-- Ben creates an event by entering his event information in GrinSync (FEATURES NOT YET DONE FOR THIS USE CASE: repeating events option, associating student organization, picture upload - we may switch this to a stretch feature; as of now, we have the MVP for the event creation page - event title, location, date/time, description, event tags).
+## Operational Use Cases (so far) ## 
+- Ben creates an event by entering his event information in GrinSync (FEATURES NOT YET DONE FOR THIS USE CASE: repeating events option, associating student organization, picture upload (we may switch this to a stretch feature); as of now, we have the MVP for the event creation page - event title, location, date/time, description, event tags).
+- Noah looks through the daily, weekly, and monthly calendar views on the Calendar page. 
