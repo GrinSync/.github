@@ -31,9 +31,14 @@ When users first open the app, they will be shown the Home page, which displays 
 ## Creating an account
 You may access GrinSync as one of the following four roles: Grinnell College Student, Grinnell College Staff/Faculty/Administrator, Grinnell Community User, and Guest User. 
 Navigate to the Profile page (click the Profile button in the bottom navigation bar). Click on "Register". Register as whatever user you are by entering the requested information. 
+If you try to Register with an email that is already in use, you will receive an invalid credentials error when logging in.
 
 ## Logging in
 Navigate to the Profile page (click the Profile button in the bottom navigation bar). Click on "Log In". Log in with your credentials. 
+When Logging in, there is a “Forgot Password?” Button, this button is not currently functioning and will just do nothing when clicked.
+
+## Logging out
+When you try to log out by clicking the Logout button on the Profile page, you must switch to a different page by clicking on any button in the bottom navigation bar for the app to fully process your log out. 
 
 ## Navigating events on the Home page
 Navigate to the Home page (click the Home button in the bottom navigation bar). Upcoming events will show. You can swipe down to refresh the page. 
@@ -59,3 +64,6 @@ Enter information pertaining to the event. Information requested:
 - Description (type out)
 - Student-only event? (check box)
 - Event tags (click on button and select all tags that apply)
+Creating an event while not logged in should show an “Event Creation Error” saying that GrinSync couldn’t create the event. This is because you need to be logged in as a student to add events to the calendar, currently.
+Creating an event with missing required information (title, location, start time, end time) will show an “Event Creation Error” indicating you are missing information or have invalid input (in this case, you are missing information). 
+Creating an event with an end time that is before the start time will show an “Event Creation Error” indicating you are missing information or have invalid input (in this case, you have invalid input). 
