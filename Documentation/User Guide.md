@@ -65,6 +65,7 @@ Enter information pertaining to the event. Information requested:
 - Description (type out)
 - Student-only event? (check box)
 - Event tags (click on the button and select all tags that apply)
+
 Creating an event while not logged in should show an “Event Creation Error” saying that GrinSync couldn’t create the event. This is because you need to be logged in as a student to add events to the calendar, currently.
 Creating an event with missing required information (title, location, start time, end time) will show an “Event Creation Error” indicating you are missing information or have invalid input (in this case, you are missing information). 
 Creating an event with an end time that is before the start time will show an “Event Creation Error” indicating you are missing information or have invalid input (in this case, you have invalid input). 
