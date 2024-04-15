@@ -28,7 +28,7 @@ class NEWPage extends StatefulWidget {
 
 // Define a state class to manage the state of the widget 
 class _NEWPage extends State<NEWPage> {
-  // Variables that need to be stored for this page
+  // These are variables that need to be stored for this page
   // late indicates that the variables are initialized later on
   late final TextEditingController ...;
   late final String ...;
@@ -54,4 +54,4 @@ class _NEWPage extends State<NEWPage> {
     return Scaffold(...)
   }
 ```
-The widgets that make up the page UI/interface go within the Scaffold call. We suggest going through this tutorial to learn how to add UI elements: https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=en#0 
+The widgets that comprise the page UI/interface go within the Scaffold call. We suggest going through this tutorial to learn how to add UI elements: https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=en#0 
