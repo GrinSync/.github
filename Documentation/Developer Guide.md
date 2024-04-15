@@ -20,7 +20,7 @@ This is the basic scheme for creating a new page.
 class NEWPage extends StatefulWidget {
   const NEWPage({super.key}); // Define a constructor
   // Specify that when a new instance of the page is created, it should create a corresponding state
-  // object of new type that is defined below
+  // object of a new type that is defined below
   // (which will be how we manage the state of the widget of the page)
   @override 
   State<NEWPage> createState() => _NEWPage();
