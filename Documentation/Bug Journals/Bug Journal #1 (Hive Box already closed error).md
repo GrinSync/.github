@@ -1,4 +1,6 @@
-## Reproductions Steps
+# Hive Box already closed error on start-up
+
+## Reproduction Steps
 The error occurs on start-up, so simply running the program on the emulator in its current state causes the error.
 1. Open your local repo of the project in VS Code.
 2. Have your emulator running (for here, just follow the steps to start the emulator you usually use).
