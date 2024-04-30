@@ -61,10 +61,10 @@ var json = jsonDecode(result.body);
 <!doctype html>
 <html lang="en">
 <head>
-&nbsp;<title>Server Error (500)</title>
+  <title>Server Error (500)</title>
 </head>
 <body>
-&nbsp;<h1>Server Error (500)</h1><p></p>
+  <h1>Server Error (500)</h1><p></p>
 </body>
 </html>
 ```
