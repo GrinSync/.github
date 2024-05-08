@@ -34,6 +34,20 @@ The GrinSync organization has three repositories: *.github*, *GrinSyncFrontend*,
 # Issue-tracking tool #
 We use [Trello](https://trello.com/b/uRb8HI8c/grinsync) to track our issues. Currently, we have the main pages of our mobile app that need to be implemented as our high-level "epic" issues in our backlog. In subsequent sprints, we will break them down into sub-issues and allocate them to different members of the group. We have a "Backlog" category that contains future, more high-level issues that need to be completed. We have a "Sprint # Issues" category for the issues we plan on doing for the current sprint (#). We have an "In Progress - Sprint #" category for issues we are actively working on for the current sprint. Then, we have categories of the name "Done in Sprint # (MM/DD - MM/DD)" for the issues we completed for each sprint previously. We will move issues into the different categories as we plan, start, and finish them during a sprint (as appropriate). 
 
-# Operational Use Cases (so far) #
-- Ben creates an event by entering his event information in GrinSync (FEATURES NOT YET DONE FOR THIS USE CASE: repeating events option, associating student organization, picture upload (we may switch this to a stretch feature); as of now, we have the MVP for the event creation page - event title, location, date/time, description, event tags).
-- Noah looks through the daily, weekly, and monthly calendar views on the Calendar page. 
+# Operational Use Cases #
+- Register a new student user with email confirmation
+- Forgot password?
+- Log in after registration
+- Link and create a student account to a student organization
+- Create a new event (with repeating event options) - as an individual or as a student organization
+- Edit an event you created (or an event in a student organization that you are linked to)
+- Delete an event you created (or an event in a student organization that you are linked to)
+- Follow a student organization
+- Like an event
+- Share an event
+- Contact event host
+- Search for events
+- Filter events on the Home page
+- View liked events, events I created, or preferred events on calendar (in various time views: monthly, weekly, daily) 
+- Can view event details when clicking on an event
+- Log out
