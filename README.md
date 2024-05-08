@@ -7,14 +7,21 @@ This is a general repository for general information on GrinSync (as the whole p
 - *profile*: The folder for our organization's profile. Currently, it only contains the README.md file that appears on our organization's home page. 
 - *Documentation*: The folder for the documentation of our software. It contains User Guide.md, Developer Guide.md, Help Menus and Tooltips.md, Changes and Release Notes.md.
 
-## Operational Use Cases (so far) ## 
+## Operational Use Cases ## 
 - Register a new student user with email confirmation
 - Forgot password?
 - Log in after registration
-- Create a new event (with repeating event options)
-- Edit an event you created
-- Delete an event
+- Link and create a student account to a student organization
+- Create a new event (with repeating event options) - as an individual or as a student organization
+- Edit an event you created (or an event in a student organization that you are linked to)
+- Delete an event you created (or an event in a student organization that you are linked to)
+- Follow a student organization
 - Like an event
+- Share an event
+- Contact event host
 - Search for events
-- View events on comprehensive calendar (in various time views: monthly, weekly, daily) with new arrows to navigate (can see event details in calendar)
+- Filter events on the Home page
+- View liked events, events I created, or preferred events on calendar (in various time views: monthly, weekly, daily) 
+- Can view event details when clicking on an event
 - Log out
+
