@@ -15,11 +15,11 @@ Our goal is to develop both an app (Android and iOS) and a website for GrinSync,
 - A basic filtering scheme to allow users who are trying to discover events to categorize events in the event calendar by type (food is offered, pets are allowed, etc.).
 - The ability for users to set preferences to tailor their event recommendations in the app. 
 - Automated pulling of events from Grinnell College’s official calendar and Grinnell College Athletics’ calendar to GrinSync’s event calendar. 
-- Some sort of GrinSync moderator to ensure the app is accurate (details to be fleshed out still). 
+- Some sort of GrinSync moderator to ensure the app is accurate. 
 - Account creation for GrinSync users.
 - Student organization leaders can link their account with their student organization once they verify their identity. Verification must occur every semester. 
 
-## Stretch goals ##
+## Stretch goals - not implemented as of Spring 2024 ##
 - Allowing users to select specific events/organizations to get notifications from.
 - The option to edit an event after you post it and notify interested users about the changes in event details.
 - Adding events to the Student User’s Outlook calendar.
@@ -32,7 +32,7 @@ The GrinSync organization has three repositories: *.github*, *GrinSyncFrontend*,
 - *GrinSyncBackend*: This repository will contain all of the code and software development for the backend of GrinSync.
 
 # Issue-tracking tool #
-We use [Trello](https://trello.com/b/uRb8HI8c/grinsync) to track our issues. Currently, we have the main pages of our mobile app that need to be implemented as our high-level "epic" issues in our backlog. In subsequent sprints, we will break them down into sub-issues and allocate them to different members of the group. We have a "Backlog" category that contains future, more high-level issues that need to be completed. We have a "Sprint # Issues" category for the issues we plan on doing for the current sprint (#). We have an "In Progress - Sprint #" category for issues we are actively working on for the current sprint. Then, we have categories of the name "Done in Sprint # (MM/DD - MM/DD)" for the issues we completed for each sprint previously. We will move issues into the different categories as we plan, start, and finish them during a sprint (as appropriate). 
+We use [Trello](https://trello.com/b/uRb8HI8c/grinsync) to track our issues. We have a "Backlog" category that contains future, more high-level issues that need to be completed. We have a "Sprint # Issues" category for the issues we plan on doing for the current sprint (#). We have an "In Progress - Sprint #" category for issues we are actively working on for the current sprint. Then, we have categories of the name "Done in Sprint # (MM/DD - MM/DD)" for the issues we completed for each sprint previously. We will move issues into the different categories as we plan, start, and finish them during a sprint (as appropriate). 
 
 # Operational Use Cases #
 - Register a new student user with email confirmation
