@@ -5,7 +5,7 @@ This is a general repository for general information on GrinSync (as the whole p
 - *Sprint Planning Reports*: The folder where all of our team's sprint planning reports will be.
 - *Sprint Review Reports*: The folder where all of our team's sprint review reports will be.
 - *profile*: The folder for our organization's profile. Currently, it only contains the README.md file that appears on our organization's home page. 
-- *Documentation*: The folder for the documentation of our software. It contains User Guide.md, Developer Guide.md, Help Menus and Tooltips.md, Changes and Release Notes.md.
+- *Documentation*: The folder for the documentation of our software. It contains a User Guide, Developer Guide, some Flutter Installation Help, and a Change Log and Release Notes (nothing in here as of Spring 2024 since we haven't released our app yet).
 
 ## Operational Use Cases ## 
 - Register a new student user with email confirmation
