@@ -1,27 +1,29 @@
 # User Guide
-Welcome to GrinSync! GrinSync is a mobile app that displays events happening on campus at Grinnell College. The app also allows event organizers to advertise their Grinnell events.
+Welcome to GrinSync! Broadly, GrinSync is a mobile app that displays events happening on campus at Grinnell College and allows event organizers to advertise their Grinnell events. We are so glad you are interested in our app!
 
-## Table of contents (incomplete)
+## Table of contents
+- ### Guest Mode
+  - #### Home Page
+  - #### Search Page
+  - #### Create Page
+  - #### Calendar Page
+  - #### Profile Page
 - ### Creating an account
   - #### Grinnell College Student
-    - ##### Regular students
-    - ##### Student Organization Leaders
   - #### Grinnell College Staff/Faculty/Administrator
   - #### Grinnell Community Users
-  - #### Guest user
 - ### Logging in
-- ### Navigating events on the Home page
+  - #### Forgot Password?
+- ### Profile Page
+  - ####
+- ### Navigating the Home page
   - #### Applying filters
-  - #### Followed accounts
-  - #### Adding events to My Agenda
+  - #### Liking events to My Agenda
   - #### Reading event details
-- ### Creating events
-- ### Searching for events
-- ### My Agenda and Calendar View
+- ### Creating Events - Create Page
+- ### Searching for events - Search Page
+- ### Calendar View
   - #### Views
-- ### Profile and Settings
-  - #### Removing students or Organizations from Follow List
-  - #### Event Reminder
 - ### Frequently Asked Questions
 
 ---
