@@ -140,9 +140,11 @@ As mentioned previously, there are several ways to access the edit event page (t
 - As of right now, there is no way to change the repeating event customizations or the end repeat date for a repeating event (that's why there are no fields for those inputs on the Edit Event page).
 - For users that are linked to student organizations, there is no way to switch the event host once the event is already created.
 - Editing a repeating event will propagate the edits automatically to the event that was edited and all repeating events after it (but the events that are prior to the one edited remain unchanged).
+- If an event is hosted by a student organization, any user linked to the student organization can edit the event. 
 ### Deleting Events
 Similarly, as mentioned previously, there are several ways to access the edit event page (through event details or the Events I Created page). Once the delete option is pressed, it should be deleted from GrinSync.
 - Deleting a repeating event will delete the current event and all repeating events after it (but the events that are prior to the one that was deleted will stay).
+- If an event is hosted by a student organization, any user linked to the student organization can delete the event. 
 
 ## Search Page - Logged In
 The Search page while logged in works the same as the Search page in Guest mode, with the only exception being that if the logged-in user is a student user, the search results will also show any student-only events (this does not happen in Guest mode or for faculty and community users). In summary, users can search for events by event title or location. 
