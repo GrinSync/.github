@@ -2,14 +2,20 @@
 This is a guide to the developers of GrinSync. 
 
 ## Table of Contents
-- ### Flutter - Creating Pages for the App
-- ### Software Architecture
-- ### Database Structure
+- ### Flutter - Creating Pages for the App (Frontend)
 - ### Languages and Frameworks
+  - #### Frontend
+  - #### Backend 
 - ### API Documentation
 - ### Coding Guidelines
+  - #### Frontend
+    - ##### Widgets
+    - ##### Page Refresh
+      - ##### Description of Mechanism
+      - ##### Implementation of the Mechanism
+  - #### Backend 
 
-## Flutter - Creating Pages for the App
+## Flutter - Creating Pages for the App (Frontend)
 Imagine a page in the app as one big widget. We will create this widget and add functionalities to it. 
 
 This is the basic scheme for creating a new page. 
@@ -18,23 +24,23 @@ This is the basic scheme for creating a new page.
 // Define a new class that extends the StatefulWidget class. This means that the page is a widget
 // that can have mutable state.
 class NEWPage extends StatefulWidget {
-  const NEWPage({super.key}); // Define a constructor
+  const NEWPage({super.key}); // Define a constructor.
   // Specify that when a new instance of the page is created, it should create a corresponding state
   // object of a new type that is defined below
-  // (which will be how we manage the state of the widget of the page)
+  // (which will be how we manage the state of the widget of the page).
   @override 
   State<NEWPage> createState() => _NEWPage();
 }
 
-// Define a state class to manage the state of the widget 
+// Define a state class to manage the state of the widget. 
 class _NEWPage extends State<NEWPage> {
-  // These are variables that need to be stored for this page
-  // late indicates that the variables are initialized later on
+  // These are variables that need to be stored for this page.
+  // late indicates that the variables are initialized later on.
   late final TextEditingController ...;
   late final String ...;
   late List<String> ...;
 
-  /// Initialize variables defined above here
+  /// Initialize variables defined above here.
   @override
   void initState() {
     ... 
@@ -48,20 +54,20 @@ class _NEWPage extends State<NEWPage> {
     super.dispose();
   }
 
-  /// Here is where we build the page interface
+  /// Here is where we build the page interface.
   @override
   Widget build(BuildContext context) {
     return Scaffold(...);
   }
 ```
 
-If your page doesn't contain any variables or the value of your variables will never change, it is recommended to use a StatelessWidget. The basic scheme looks like this. 
+If your page doesn't contain any variables or the value of your variables will never change, it is recommended to use a StatelessWidget instead. The basic scheme looks like this. 
 
 ```dart
 class NEWPage extends StatelessWidget {
   final String text;
-  ... // Other variables here
-  NEWPage({Key? key, required text}) : super(key: key); // constructor
+  ... // Other variables here.
+  NEWPage({Key? key, required text}) : super(key: key); // Constructor
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +77,7 @@ class NEWPage extends StatelessWidget {
 
 ```
 
-The widgets that comprise the page UI/interface go within the Scaffold widget. The Scaffold widget provides you areas to place an appBar, a body. You don't have to use Scaffold widget if an appBar is not needed. You can return the widget that goes into the 'body' of Scaffold widget directly. We suggest going through this tutorial to learn how to add UI elements: https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=en#0 
+The widgets that comprise the page UI/interface go within the Scaffold widget. The Scaffold widget provides you areas to place an appBar or a body. You don't have to use Scaffold widget if an appBar is not needed; you can return the widget that goes into the 'body' of Scaffold widget directly. We suggest going through this tutorial to learn how to add UI elements: https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=en#0 
 
 ## Languages and Frameworks
 ### Frontend
@@ -82,7 +88,7 @@ The widgets that comprise the page UI/interface go within the Scaffold widget. T
 - Language: [Python](https://docs.python.org/3/)
 
 ## API Documentation
-Currently, these are the available API functions to interact with the backend: 
+Currently, these are the available API functions for the frontend to interact with the backend: 
 
 ```python
 path('api/search', apiViews.search, name = 'search'),
@@ -126,34 +132,34 @@ For the complete list, please refer to: https://github.com/GrinSync/GrinSyncBack
 
 ## Coding Guidelines
 ### Frontend
-
+We use these Dart guidelines for our frontend code: https://dart.dev/effective-dart
 #### Widgets
-- Know what each widget does in a widget tree, remove the ones that don't do anything. Here is an examples: 
-  - If you have a scaffold, but all the child widgets are only in 'body' of the scaffold, and you are not calling anything only scaffold has (a snackbar, for example), you should probably remove the scaffold and pass the widget in scaffold's body directly to scaffold's parent widget.
+- Know that each widget goes in a widget tree, and remove the ones that don't do anything. Here is an example: 
+  - If you have a Scaffold, but all the child widgets are only in the 'body' of the Scaffold, and you are not calling anything that only Scaffold has (a snackbar, for example), you should probably remove the Scaffold and pass the widget in Scaffold's body directly to Scaffold's parent widget.
 
 #### Page Refresh
 This is a mechanism implemented to avoid refresh issues where a child widget modifies an object, but the parent widget still shows the old version before modification. An example of the issue (it actually happens twice in this example): 
-1. A user opens events I created page and see a list of events they created.
+1. A user opens the Events I Created page and sees a list of events they created.
 2. They click on an event card to go to the event details page of the event.
-3. There they selects 'Edit Event' to go to the event edit page.
-4. At event edit page, they change the start time of the event.
-5. After saving the changes, they go back to the event detials page, but the start time shown on the page is before their changes are made (because the event details page is not refreshed).
-6. They go back to the events I created page, the event card also shows the old start time (because the events I created page is not refreshed). 
+3. There, they select 'Edit Event' to go to the event edit page.
+4. On the event edit page, they change the start time of the event.
+5. After saving the changes, they go back to the event details page, but the start time shown on the page is the one from before their changes are made (because the event details page is not refreshed).
+6. They go back to the Events I Created page, and the event card also shows the old start time (because the Events I Created page is not refreshed). 
 
 ##### Description of The Mechanism
 - A page should have a refresh function (where the page updates its field(s) by getting the information from the backend again) if its child widgets can modify the page's content shown. When calling the child widget, pass the refresh function to the child widget. 
-  - This requires the page to be a StatefulWidget
-  - Homepage (upcoming events) is the only exception because we don't want to refresh the page which interrupts the user's event exploration.
-- A child widget should always take in a VoidCallback function called refreshParent (its parent widget's refresh function) if the child widget is able to modify what the parent widget pass to it. Whenever the child widget modifies the object (e.g. an Event) the parent passed to it, it should call refreshParent().
+  - This requires the page to be a StatefulWidget.
+  - The Home page (upcoming events) is the only exception because we don't want to refresh the page automatically, as it interrupts the user's event exploration.
+- A child widget should always take in a VoidCallback function called refreshParent (its parent widget's refresh function) if the child widget is able to modify what the parent widget passes to it. Whenever the child widget modifies the object (e.g. an event) the parent passed to it, it should call refreshParent().
 - If the child widget has a refresh function too, the refreshParent function should be wrapped in it as well, so that when the child widget is refreshed by the grandchild widget, the grandparent widget can be refreshed as well. 
 - At times when the parent widget doesn't have a refresh function/doesn't require the child widget to refresh it, but the child requires a VoidCallback, an empty anonymous function ('() {}') can be passed to the child widget.
 
 
 ##### Implementation of the Mechanism
-Starting from EventsICreatedPage.dart where we implemented the events I created page, here is the refresh function decalred in the `_EventsICreatedPageState` class. The SetState function triggers a rebuild of the page with the new _loadEventsFuture value. 
+Starting from EventsICreatedPage.dart, where we implemented the events I created page, here is the refresh function declared in the `_EventsICreatedPageState` class. The SetState function triggers a rebuild of the page with the new _loadEventsFuture value. 
 
 ```dart
-  /// Function to refresh the page by loading the events again
+  /// Function to refresh the page by loading the events again.
   refresh() {
     setState(() {
       _loadEventsFuture = loadEvents();
@@ -164,7 +170,7 @@ Starting from EventsICreatedPage.dart where we implemented the events I created 
 `_loadEventsFuture` is a local variable of type `Future` which the `FutureBuilder` depends on. `FutureBuilder` waits for the Future to complete and builds the list of event cards: 
 
 ```dart
-// Use a FutureBuilder to wait for the events to load
+// Use a FutureBuilder to wait for the events to load.
       body: FutureBuilder(
           future: _loadEventsFuture,
           builder: (context, snapshot) {
@@ -183,7 +189,7 @@ child: EventCardPlain(
 The event card uses the Event object to display the event information, but doesn't use the refresh function itself. Rather, it passes it to the event details page so that the refresh function can be called inside the event details page: 
 
 ```dart
-// Navigates to the Event Details page if the user taps on the event card
+// Navigates to the Event Details page if the user taps on the event card.
 onTap: () {
   Navigator.push(
     context,
@@ -233,3 +239,5 @@ refresh() async {
 ```
 Notice that the refreshParent function is included in event details page's refresh function too. This because when the child widget calls the function to refresh the event details page, it indicates that some changes have been made to the event. Hence it's probably a good idea to refresh event details page's parent widget too. 
 
+### Backend
+We use these Python guidelines for our backend code: https://peps.python.org/pep-0008/ 
