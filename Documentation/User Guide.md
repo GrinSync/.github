@@ -41,22 +41,25 @@ We will explain the main pages, as indicated by the icons and labels on the bott
 When users first open the app, they will be in the app's Guest mode. In Guest mode, users can only view public events (i.e., NOT student-only events). Other limitations of Guest mode are explained below. Guest mode allows users to discover Grinnell College events that are open to the public without requiring that they make a GrinSync account (e.g., visitors to the college may wish to use the app in Guest mode if their stay is only temporary).  
 ### Home Page - Guest Mode
 When users first open the app, they are shown the Home page, which displays upcoming events (events happening at the current time to events starting a week from now) at Grinnell College that are open to the public. Users can pull down to refresh this page. Users can tap the filter icon in the top right corner, which will show how the events are filtered on the Home page. In Guest mode, the default event tags for filtering are all of the event tags possible in GrinSync, so when looking at the filtering options initially, all tags will be selected. Users can deselect and select whichever tags they wish to filter by on the Home page and apply the filters by pressing the "Apply Filters" button at the bottom. After, the Home page will refresh to only show events that contain the chosen filters. 
-*Filtering Options* 
-In addition to selecting specific event tags, there are a few more filtering options users can apply. 
+*Filtering Options*: In addition to selecting specific event tags, there are a few more filtering options users can apply. 
 1. "Only show events with all tags selected": If users check this option, this means that only events that contain all tags that are currently selected will be shown on the Home page. For example, if the chosen tags are Art and Athletics, only events with both those tags will show.
 2. "Revert to default tags": If users click this button, the tags selected will automatically revert back to the default tags. For Guest mode, the default tags are all of the event tags in GrinSync.
 3. "Deselect all tags": If users click this button, all tags that are currently selected will become deselected.
+
 In order for the filtering options to be applied on the Home page, the "Apply Filters" button must be pressed.
 #### Event Details - Guest Mode
 On the Home page, users can click on any event to view the event details. In the event details, users can see the host, location, start date-time, end date-time, description, and tags of an event. 
+
 At times, there will be map information given in an event location. If there is map information, the location will have a blue pinpoint symbol next to it. Users can then click on the location, which will bring up the navigation to the event in their phones' default map app. If there is no blue pinpoint symbol next to the event location, clicking on the location will open Grinnell's interactive map on the Grinnell website on the users' browsers on their phones. 
+
 If the host of an event is the Grinnell Calendar, clicking on the host name will open the official Grinnell calendar on the Grinnell website on the users' browsers on their phones. 
+
 Additionally, at the bottom, there are three buttons:
 1. "Add to Calendar": If users click this button, the current event they are viewing in GrinSync will become an event draft in the default calendar app of their phones.
 2. "Contact Host": If users click this button, an email will be drafted to the event host's email in the default email app of their phones. The email itself is a generic email, indicating that the user is interested in the event, but users may change the email however they would like.
 3. "Share Event": If users click this button, their phones' default share dialog pops up and allows users to share a pre-written description of the event (the dialog will vary depending on the phone, but usually, there are options to copy the text or send the text to someone via messages).
-Users can press the help icon in the top right corner of the event details to see an explanation of the event details layout. 
-Users can press the back arrow on the top left corner to return to the Home page. 
+
+Users can press the help icon in the top right corner of the event details to see an explanation of the event details layout. Users can press the back arrow on the top left corner to return to the Home page. 
 ### Search Page - Guest Mode
 On the Search page, users can search for events by event title or location. Users can click into the search bar, type their search query, and press the magnifying glass icon on the right to do the search. The search is NOT case-sensitive. Any event containing the searched text either in its title or location will show in the search results. For Guest mode, only events that are not marked as student-only will show in the search results. 
 ### Create Page - Guest Mode
@@ -81,6 +84,7 @@ Navigate to the Profile page (click the Profile button in the bottom navigation 
 On the Login page from above, there is a "Forgot Password?" button. Users can click this button if they forgot the password to their GrinSync account. Clicking on the button will open a web page that prompts users to enter the email of their GrinSync account. Once users do that, they will be sent an email from GrinSync. Users must click the link in that email, which will lead to another webpage that will allow users to reset their password. After clicking "Change Password" and seeing the confirmation of changing their password, users can go back to the GrinSync app and log in (as explained above). 
 
 ## Profile Page - Logged In
+Users can access this page by clicking on the Profile button on the bottom navigation bar. 
 ### Logging out
 On the Profile page, users can click on the "Logout" button at the bottom to log out. This action will log the users out and return them to Guest mode in the app. 
 ### Tag Preferences
@@ -88,7 +92,7 @@ When users click on this option, they will be led to the Tag Preferences page. O
 ### Events I Created
 When users click on this option, they will view a page with all of the events they created. They can click on the event to show the event details (event details while logged in are explained below). Also, if they don't want to click on the event details, they can do a small swipe to the left of the event card, and this will show options to edit or delete the event. If users do a large swipe to the left over the event card, the event will be deleted. 
 ### Events I Follow
-When users click on this option, they will view a page with all of the events that they have liked/hearted (liking events explained below). They can click on the event to show the event details (event details while logged in are explained below). Also, users can swipe to the left of the event card, unlike the event. In order to see the changes on the Events I Follow page, however, users must press the backarrow at the top left of the page and click back into the Events I Follow. 
+When users click on this option, they will view a page with all of the events that they have liked/hearted (liking events explained below). They can click on the event to show the event details (event details while logged in are explained below). Also, users can swipe to the left of the event card to unlike the event. In order to see the changes on the Events I Follow page, however, users must press the backarrow at the top left of the page and click back into the Events I Follow. 
 ### Student Organizations I Follow
 When users click on this option, they will view a page with all of the student organizations that they follow on GrinSync (following student organizations described below). Users can further click on a student organization to view the Student Organization Details page (explained below). 
 ### Student Organizations I Lead
@@ -131,18 +135,22 @@ Enter information about the event. The information requested:
   - The end repeat date is inclusive, so the event will repeat on the end repeat date if applicable. 
 - Student-only event? (check box; yes if the event is students only)
 - Event tags (click on the button and select and submit all tags that apply to the event)
+
 Title, location, start date/time, and end date/time are the only required fields.
+
 At the bottom of the page, there is a "Reset All Fields" button that will clear all the fields on the Create page when pressed.
+
 To submit the event, users can press the "Create Event" button at the bottom. Either a message saying that the event was created successfully will show, or there will be a message indicating there is an error (and the message will tell the reason why).
+
 For users who are connected to student organizations, there will be an extra dropdown menu at the top of the Create page. Here, users can choose a student organization that they lead to be the host of the event if they want (as opposed to the user themself being the host). Users should only choose an option in the dropdown menu if they wish to create the event under a student organization. If no option is chosen for that dropdown, the event will be created under the user. 
 ### Editing Events
-As mentioned previously, there are several ways to access the edit event page (through event details or the Events I Created page). The page itself is pretty straightforward and similar to the Create page. The fields will automatically be filled with the event information, and users can change the fields however they like and submit the changes by clicking the "Edit Event" button. A few technicalities for editing an event.
+As mentioned previously, there are several ways to access the Edit Event page (through event details or the Events I Created page). The page itself is pretty straightforward and similar to the Create page. The fields will automatically be filled with the event information, and users can change the fields however they like and submit the changes by clicking the "Edit Event" button. A few technicalities for editing an event:
 - As of right now, there is no way to change the repeating event customizations or the end repeat date for a repeating event (that's why there are no fields for those inputs on the Edit Event page).
 - For users that are linked to student organizations, there is no way to switch the event host once the event is already created.
 - Editing a repeating event will propagate the edits automatically to the event that was edited and all repeating events after it (but the events that are prior to the one edited remain unchanged).
 - If an event is hosted by a student organization, any user linked to the student organization can edit the event. 
 ### Deleting Events
-Similarly, as mentioned previously, there are several ways to access the edit event page (through event details or the Events I Created page). Once the delete option is pressed, it should be deleted from GrinSync.
+Similarly, as mentioned previously, there are several ways to access the deleting an event function (through event details or the Events I Created page). Once the delete option is pressed, the event should be deleted from GrinSync.
 - Deleting a repeating event will delete the current event and all repeating events after it (but the events that are prior to the one that was deleted will stay).
 - If an event is hosted by a student organization, any user linked to the student organization can delete the event. 
 
@@ -174,17 +182,22 @@ The default time view on the Calendar page is the Day view, and it will show the
 
 ## Frequently Asked Questions
 **Q. How many events can I make at once?**
-A. Once you create an event, you can go straight into creating another one! There is no limit to how many events you make. We just ask that you keep the events appropriate and accurate. There will be a GrinSync moderator who will delete spam events. 
+
+A. Once you create an event, you can go straight into creating another one! There is no limit to how many events you make. We just ask that you keep the events appropriate and accurate. There is be a GrinSync moderator who will delete spam events. 
 
 **Q. How far in advance can I schedule an event?**
+
 A. The latest date that you can schedule an event is January 1st, 2500. So, you can schedule events as far in advance up until that date. 
 
 **Q. Is it possible to share my Calendar page with other people?**
+
 A. GrinSync currently does not have a feature to do that. However, you can share events with other people. Our sharing feature creates a section of text that you can copy or share via messages. 
 - Example: "Check out this event: Romancing Ruins at Burling Library - Print Study Room on 07:30 May 12, 2024"
 
 **Q. If I edit a repeating event, is there a way to change only the event I choose and not have the changes made in all future events?**  
+
 A. No, GrinSync does not currently have this feature. GrinSync will always propagate the changes to the current event and all repeating events after it. 
 
 **Q. If I like an event, does it send me a reminder that the event is happening soon?**  
+
 A. No, GrinSync does not currently push notifications to users. 
